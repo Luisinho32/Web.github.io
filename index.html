@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Completa para Publicar tu Sitio Web</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#10B981',
+                        dark: '#1E293B',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .provider-card:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-dark">
+    <header class="bg-gradient-to-r from-primary to-secondary text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 animate-pulse">Guía para Publicar tu Sitio Web</h1>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto">Aprende paso a paso cómo llevar tu sitio web desde tu computadora a internet</p>
+            <div class="mt-8">
+                <div class="inline-flex rounded-md shadow">
+                    <a href="#pasos" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-primary bg-white hover:bg-gray-50 transition duration-300">
+                        Comenzar <i class="fas fa-arrow-down ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <section id="pasos" class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">Pasos para Publicar tu Sitio Web</h2>
+                <div class="w-24 h-1 bg-primary mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Paso 1 -->
+                <div class="step-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 ease-in-out">
+                    <div class="bg-primary text-white py-4 px-6">
+                        <h3 class="text-xl font-semibold flex items-center">
+                            <span class="inline-block bg-white text-primary rounded-full w-8 h-8 flex items-center justify-center mr-3">1</span>
+                            Elegir Hosting
+                        </h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Selecciona un proveedor de alojamiento web según tus necesidades. Considera:</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mt-1 mr-2"></i>
+                                <span>Tráfico esperado</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mt-1 mr-2"></i>
+                                <span>Soporte técnico</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mt-1 mr-2"></i>
+                                <span>Precio y características</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Paso 2 -->
+                <div class="step-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 ease-in-out">
+                    <div class="bg-primary text-white py-4 px-6">
+                        <h3 class="text-xl font-semibold flex items-center">
+                            <span class="inline-block bg-white text-primary rounded-full w-8 h-8 flex items-center justify-center mr-3">2</span>
+                            Registrar Dominio
+                        </h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Tu dirección en internet (ej: midominio.com). Puedes:</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mt-1 mr-2"></i>
+                                <span>Comprar nuevo dominio</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mt-1 mr-2"></i>
+                                <span>Usar uno existente</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mt-1 mr-2"></i>
+                                <span>Obtener subdominio gratuito</span>
+                            </li>
+                        </ul>
+                        <div class="mt-4 bg-gray-100 p-3 rounded">
+                            <p class="text-sm text-gray-600">Ejemplo: tupagina.netlify.app (gratis)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paso 3 -->
+                <div class="step-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 ease-in-out">
+                    <div class="bg-primary text-white py-4 px-6">
+                        <h3 class="text-xl font-semibold flex items-center">
+                            <span class="inline-block bg-white text-primary rounded-full w-8 h-8 flex items-center justify-center mr-3">3</span>
+                            Subir Archivos
+                        </h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Transferir tus archivos HTML, CSS, JS al servidor:</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mt-1 mr-2"></i>
+                                <span>Por FTP (FileZilla)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mt-1 mr-2"></i>
+                                <span>Interfaz web del hosting</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mt-1 mr-2"></i>
+                                <span>Git/GitHub (para avanzados)</span>
+                            </li>
+                        </ul>
+                        <div class="mt-4">
+                            <span class="inline-block bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Asegúrate de subir el index.html</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mt-8">
+                <!-- Paso 4 -->
+                <div class="step-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 ease-in-out">
+                    <div class="bg-primary text-white py-4 px-6">
+                        <h3 class="text-xl font-semibold flex items-center">
+                            <span class="inline-block bg-white text-primary rounded-full w-8 h-8 flex items-center justify-center mr-3">4</span>
+                            Configurar DNS
+                        </h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Conectar tu dominio al hosting:</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mt-1 mr-2"></i>
+                                <span>Cambiar nameservers</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mt-1 mr-2"></i>
+                                <span>Configurar registros A/CNAME</span>
+                            </li>
+                        </ul>
+                        <div class="mt-4 bg-gray-100 p-3 rounded">
+                            <p class="text-sm text-gray-600">Propagación DNS puede tomar hasta 48h</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paso 5 -->
+                <div class="step-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 ease-in-out">
+                    <div class="bg-primary text-white py-4 px-6">
+                        <h3 class="text-xl font-semibold flex items-center">
+                            <span class="inline-block bg-white text-primary rounded-full w-8 h-8 flex items-center justify-center mr-3">5</span>
+                            Verificar SSL
+                        </h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Habilitar HTTPS para seguridad:</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mt-1 mr-2"></i>
+                                <span>Certificado Let's Encrypt (gratis)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mt-1 mr-2"></i>
+                                <span>Habilitar en panel de hosting</span>
+                            </li>
+                        </ul>
+                        <div class="mt-4">
+                            <span class="inline-block bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">¡Obligatorio para SEO!</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paso 6 -->
+                <div class="step-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 ease-in-out">
+                    <div class="bg-primary text-white py-4 px-6">
+                        <h3 class="text-xl font-semibold flex items-center">
+                            <span class="inline-block bg-white text-primary rounded-full w-8 h-8 flex items-center justify-center mr-3">6</span>
+                            Probar y Optimizar
+                        </h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Asegúrate que todo funcione:</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mt-1 mr-2"></i>
+                                <span>Prueba en diferentes dispositivos</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mt-1 mr-2"></i>
+                                <span>Verifica velocidad (PageSpeed)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mt-1 mr-2"></i>
+                                <span>Corrige errores</span>
+                            </li>
+                        </ul>
+                        <div class="mt-4">
+                            <a href="#" class="text-primary text-sm font-medium">Herramientas de prueba →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hosting" class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">Opciones de Hosting</h2>
+                <div class="w-24 h-1 bg-primary mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Elige la mejor opción según tu presupuesto y necesidades técnicas</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Hosting gratuito -->
+                <div class="provider-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300 ease-in-out border border-gray-200">
+                    <div class="bg-gray-100 px-6 py-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-piggy-bank text-2xl text-primary mr-3"></i>
+                            <h3 class="text-xl font-bold text-gray-800">Gratis</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mt-1 mr-3"></i>
+                                <span>Sin costo inicial</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mt-1 mr-3"></i>
+                                <span>Subdominio incluido</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mt-1 mr-3"></i>
+                                <span>Fácil de usar</span>
+                            </li>
+                            <li class="flex items-start text-gray-400">
+                                <i class="fas fa-times mt-1 mr-3"></i>
+                                <span>Limitaciones en tráfico</span>
+                            </li>
+                            <li class="flex items-start text-gray-400">
+                                <i class="fas fa-times mt-1 mr-3"></i>
+                                <span>Publicidad del proveedor</span>
+                            </li>
+                        </ul>
+                        <div class="mt-6">
+                            <a href="#" class="block text-center bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded transition duration-200">
+                                Ver opciones
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shared hosting -->
+                <div class="provider-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300 ease-in-out border border-blue-200">
+                    <div class="bg-blue-50 px-6 py-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-server text-2xl text-primary mr-3"></i>
+                            <h3 class="text-xl font-bold text-gray-800">Compartido</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mt-1 mr-3"></i>
+                                <span>Desde $3/mes</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mt-1 mr-3"></i>
+                                <span>Dominio incluido</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mt-1 mr-3"></i>
+                                <span>Panel cPanel/Plesk</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mt-1 mr-3"></i>
+                                <span>SSL gratuito</span>
+                            </li>
+                            <li class="flex items-start text-gray-400">
+                                <i class="fas fa-times mt-1 mr-3"></i>
+                                <span>Recursos compartidos</span>
+                            </li>
+                        </ul>
+                        <div class="mt-6">
+                            <a href="#" class="block text-center bg-primary hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition duration-200">
+                                Mejor opción
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VPS -->
+                <div class="provider-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300 ease-in-out border border-gray-200">
+                    <div class="bg-gray-100 px-6 py-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-microchip text-2xl text-primary mr-3"></i>
+                            <h3 class="text-xl font-bold text-gray-800">VPS</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mt-1 mr-3"></i>
+                                <span>Desde $10/mes</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mt-1 mr-3"></i>
+                                <span>Recursos dedicados</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mt-1 mr-3"></i>
+                                <span>Mayor control</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mt-1 mr-3"></i>
+                                <span>Mejor rendimiento</span>
+                            </li>
+                            <li class="flex items-start text-gray-400">
+                                <i class="fas fa-times mt-1 mr-3"></i>
+                                <span>Requiere conocimientos técnicos</span>
+                            </li>
+                        </ul>
+                        <div class="mt-6">
+                            <a href="#" class="block text-center bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded transition duration-200">
+                                Para proyectos grandes
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud -->
+                <div class="provider-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300 ease-in-out border border-gray-200">
+                    <div class="bg-gray-100 px-6 py-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-cloud text-2xl text-primary mr-3"></i>
+                            <h3 class="text-xl font-bold text-gray-800">Plataformas Cloud</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mt-1 mr-3"></i>
+                                <span>Netlify, Vercel, GitHub Pages</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mt-1 mr-3"></i>
+                                <span>Integración con Git</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mt-1 mr-3"></i>
+                                <span>Escalabilidad automática</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mt-1 mr-3"></i>
+                                <span>Múltiples opciones gratis</span>
+                            </li>
+                            <li class="flex items-start text-gray-400">
+                                <i class="fas fa-times mt-1 mr-3"></i>
+                                <span>Limitaciones en backends complejos</span>
+                            </li>
+                        </ul>
+                        <div class="mt-6">
+                            <a href="#" class="block text-center bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded transition duration-200">
+                                Ideal para frontend
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tutoriales" class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">Tutoriales Paso a Paso</h2>
+                <div class="w-24 h-1 bg-primary mx-auto"></div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="md:flex">
+                    <div class="p-8">
+                        <div class="uppercase tracking-wide text-sm text-primary font-semibold mb-1">Publicación Sin Costo</div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Cómo publicar en GitHub Pages</h3>
+                        <ol class="list-decimal pl-5 space-y-3 text-gray-700">
+                            <li class="pl-2">Crea una cuenta en <a href="#" class="text-primary">github.com</a></li>
+                            <li class="pl-2">Crea un nuevo repositorio llamado <code class="bg-gray-100 px-1 rounded">usuario.github.io</code> (donde "usuario" es tu nombre en GitHub)</li>
+                            <li class="pl-2">Sube tus archivos HTML, CSS y JS al repositorio</li>
+                            <li class="pl-2">Ve a Settings → Pages y selecciona la rama main</li>
+                            <li class="pl-2">En pocos minutos tu sitio estará en <code class="bg-gray-100 px-1 rounded">https://usuario.github.io</code></li>
+                        </ol>
+                    </div>
+                    <div class="md:flex-shrink-0 bg-gray-100 flex items-center justify-center p-8">
+                        <img class="h-48 object-cover rounded-lg" src="https://miro.medium.com/v2/resize:fit:800/1*NReYEzG7xHdpZumA6cR3vQ.png" alt="GitHub Pages">
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md overflow-hidden mt-8">
+                <div class="md:flex">
+                    <div class="md:flex-shrink-0 bg-gray-100 flex items-center justify-center p-8">
+                        <img class="h-48 object-cover rounded-lg" src="https://www.netlify.com/img/deploys/deploy-settings.png" alt="Netlify">
+                    </div>
+                    <div class="p-8">
+                        <div class="uppercase tracking-wide text-sm text-primary font-semibold mb-1">Hosting Moderno</div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Publicación con Netlify</h3>
+                        <ol class="list-decimal pl-5 space-y-3 text-gray-700">
+                            <li class="pl-2">Regístrate en <a href="#" class="text-primary">netlify.com</a></li>
+                            <li class="pl-2">Selecciona "New site from Git"</li>
+                            <li class="pl-2">Conecta tu repositorio de GitHub/GitLab</li>
+                            <li class="pl-2">Configura las opciones de deploy (deja los valores por defecto)</li>
+                            <li class="pl-2">Netlify asignará un dominio gratuito tipo <code class="bg-gray-100 px-1 rounded">tusitio.netlify.app</code></li>
+                            <li class="pl-2">Puedes conectar un dominio personalizado después</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="bg-white rounded-xl shadow-md p-8 mb-20">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-dark mb-4">Preguntas Frecuentes</h2>
+                <div class="w-24 h-1 bg-primary mx-auto"></div>
+            </div>
+
+            <div class="space-y-6">
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">¿Cuánto cuesta publicar un sitio web?</h3>
+                    <p class="text-gray-600">Puedes comenzar completamente gratis usando GitHub Pages o Netlify. Para un dominio personalizado (.com, .net, etc.) debes pagar unos $10-$15 anuales. Hosting compartido básico cuesta desde $3-$10 mensuales.</p>
+                </div>
+
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">¿Necesito contratar hosting si uso GitHub Pages o Netlify?</h3>
+                    <p class="text-gray-600">No, estos servicios funcionan como hosting gratuito para sitios estáticos (HTML, CSS, JS). Solo necesitarías hosting tradicional si desarrollas sitios con backend (PHP, bases de datos, etc.).</p>
+                </div>
+
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">¿Cómo migro mi sitio a un dominio propio después?</h3>
+                    <p class="text-gray-600">1. Compra un dominio en Namecheap, GoDaddy o similar. 2. En la configuración de tu hosting gratuito, agrega el dominio personalizado. 3. Configura los DNS para apuntar a tu hosting. Cada plataforma tiene guías específicas para esto.</p>
+                </div>
+
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">¿Qué debo hacer si mi sitio no se ve correctamente al publicarlo?</h3>
+                    <p class="text-gray-600">Verifica: 1. Que todos los archivos se subieron correctamente. 2. Que las rutas de los archivos CSS/JS son relativas (ej: "./css/style.css"). 3. Que el archivo principal se llama "index.html". 4. Usa las herramientas de desarrollador del navegador (F12) para ver errores.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">¿Cómo mejoro el tiempo de carga de mi sitio?</h3>
+                    <p class="text-gray-600">Optimiza imágenes (usa TinyPNG), minifica CSS/JS, habilita compresión GZIP, usa CDN, reduce el número de solicitudes HTTP y elige un hosting cercano a tu público objetivo.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <h2 class="text-2xl font-bold mb-6">¿Listo para publicar tu sitio web?</h2>
+                <div class="flex flex-wrap justify-center gap-4 mb-8">
+                    <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-dark bg-secondary hover:bg-green-600 transition duration-300">
+                        <i class="fab fa-github mr-2"></i> GitHub Pages
+                    </a>
+                    <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-dark bg-white hover:bg-gray-200 transition duration-300">
+                        <i class="fas fa-cloud mr-2"></i> Netlify
+                    </a>
+                    <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-blue-700 transition duration-300">
+                        <i class="fas fa-server mr-2"></i> Hosting Recomendado
+                    </a>
+                </div>
+                <p class="text-gray-400">© 2023 Guía de Publicación Web. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Efecto smooth scroll para los enlaces
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animación al hacer hover en tarjetas
+        const stepCards = document.querySelectorAll('.step-card');
+        const providerCards = document.querySelectorAll('.provider-card');
+        
+        stepCards.forEach(card => {
+            card.style.transition = 'all 0.3s ease';
+        });
+        
+        providerCards.forEach(card => {
+            card.style.transition = 'all 0.3s ease';
+        });
+    </script>
+</body>
+</html>
